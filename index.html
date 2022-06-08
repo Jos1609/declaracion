@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quieres ser mi novia</title>
+  <style>
+    .body {
+      background-color: crimson;
+      text-align: center;
+    }
+    .body__title{
+      color:white;
+    }
+    .body__img{
+      width: 100%;
+      border-radius: 50%;
+    }
+
+  </style>
+
+</head>
+
+<body class="body">
+    <h1 class="body__title">❤ ¿Quieres ser mi novia? ♥</h1>
+      <img
+        src="https://1.bp.blogspot.com/-qsvCBLdgYj8/XCLjZK9_RMI/AAAAAAAABBA/BsQ7kYtn9qkPkQ3VhF8g_1Er73bGs7KGQCLcBGAs/w1200-h630-p-k-no-nu/srewk.jpg"
+        alt="Imagen del amor" class="body__img"/>
+    <button id = "yes">si</button>
+    <button id="no">😭Nel Perro😭</button>
+  
+
+  <script>
+    const btnsi = document.getElementById('yes');
+    const btno = document.getElementById('no');
+
+    const somos = () =>{
+      alert('♥ Wow, gracias amor por darme la oportunidad de estar contigo :3');
+      location.href = 'https://www.youtube.com/watch?v=x-0KoCAV4mc&list=RDx-0KoCAV4mc&start_radio=10'
+    }
+    const evitar = () =>{
+      btno.style.position = 'absolute';
+      btno.style.top = (Math.random() * window.innerHeight) + 'px';
+      btno.style.left = (Math.random() * window.innerWidth) + 'px';
+
+    }
+    btnsi.addEventListener('click',somos);
+    btno.addEventListener('mouseover', evitar);
+
+  </script>
+</body>
+
+</html>
